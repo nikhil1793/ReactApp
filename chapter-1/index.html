@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>Chapter:1</title>
+    <style>
+        .heading {
+            background-color: lightcoral;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!-- <script>
+        const h1 = document.createElement('h1');
+        h1.textContent = 'Hello!! Good Morning';
+
+        const root = document.getElementById("root");
+        root.appendChild(h1);
+    </script> -->
+
+    <script crossorigin
+            src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const heading = React.createElement(
+            "h1",
+            {
+                id: "greet",
+                className: "heading",
+            },
+            "Hello!! ",
+            React.createElement("b", null, 'Srivastava'),
+            ". Welcome"
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        root.render(heading);
+    </script>
+</body>
+
+</html>
