@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply text-black;
+        @apply font-sans;
+        @apply font-normal;
+        @apply text-base;
+    }
+}
+
+.btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg;
+}
+
+.logo {
+    background-image: url("https://cdn.worldvectorlogo.com/logos/food-2.svg");
+    padding: 25px;
+    background-position: center;
+    background-size: contain;
+    @apply rounded-lg;
+    @apply cursor-pointer;
+}
