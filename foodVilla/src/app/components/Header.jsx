@@ -1,4 +1,9 @@
-export const Title = () => <a className="logo"></a>;
+export const Title = () => (
+  <div className="flex items-center gap-4">
+    <a className="logo"></a>
+    <h1 className="font-bold text-2xl hidden tablet:block">Food Villa</h1>
+  </div>
+);
 
 const Header = () => (
   <header>

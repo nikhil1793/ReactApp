@@ -24,9 +24,12 @@ export const Main = () => {
         <button
           className="btn-blue"
           onClick={() => {
-            const filteredData = filterResturants(resturants, searchValue);
-            console.log(resturants, searchValue);
-            setResturants(filteredData);
+            if(searchValue){
+              const filteredData = filterResturants(resturants, searchValue);
+              setResturants(filteredData);
+            } else {
+              setResturants(resturantsMocks);
+            }
           }}
         >
           Search
